@@ -1,3 +1,55 @@
 <resources>
     <string name="app_name">Book@NM</string>
+    
+    <!-- Landing Activity -->
+    <string name="app_title">Book@NM</string>
+    <string name="app_subtitle">Campus Venue Booking System</string>
+    <string name="admin_portal">Admin Portal</string>
+    <string name="user_portal">User Portal</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="login_success">Admin Login Successful</string>
+    <string name="invalid_credentials">Invalid Admin Credentials</string>
+    
+    <!-- Login/Register -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email_hint">Email (@nmims.in)</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="name_hint">Full Name</string>
+    <string name="email_error">Use institutional email</string>
+    <string name="password_error">Password needs uppercase and a number</string>
+    <string name="passwords_match_error">Passwords must match</string>
+    <string name="user_not_found">User not found. Register first.</string>
+    <string name="registration_success">Registered with Cloud Sync. Login now.</string>
+    
+    <!-- User Home -->
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="logout">Logout</string>
+    <string name="view_my_bookings">View My Bookings</string>
+    <string name="find_perfect_venue">Find Perfect Venue</string>
+    <string name="smart_tool_hint">Let our smart tool suggest for you</string>
+    <string name="available_venues">Available Venues</string>
+    <string name="search_hint">Search venues...</string>
+    
+    <!-- Booking -->
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="booking_date">Date</string>
+    <string name="booking_purpose">Purpose of Booking</string>
+    <string name="booking_success">Booking Successful (Cloud Synced)!</string>
+    <string name="booking_conflict">Booking conflict! This slot is already taken.</string>
+    <string name="terms_accept">I accept the terms and conditions</string>
+    
+    <!-- Admin Dashboard -->
+    <string name="view_bookings">View Bookings</string>
+    <string name="add_venue">Add New Venue</string>
+    <string name="add_admin">Add New Admin</string>
+    <string name="export_csv">Export to CSV</string>
+    <string name="export_txt">Export to TXT</string>
+    <string name="export_success">Successfully exported to %1$s</string>
+    
+    <!-- Dialogs/Toasts -->
+    <string name="required_field">Required</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
 </resources>

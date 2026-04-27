@@ -48,9 +48,9 @@ public class UserHomeActivity extends AppCompatActivity {
 
         user = db.getUserById(userId);
         if (user != null) {
-            tvWelcome.setText("Welcome, " + user.getName());
+            tvWelcome.setText(getString(R.string.welcome_user, user.getName()));
         } else {
-            Toast.makeText(this, "Could not load user data.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.user_not_found), Toast.LENGTH_SHORT).show();
             finish();
             return;
         }

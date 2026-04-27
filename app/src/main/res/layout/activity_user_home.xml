@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:text="Logout"
+            android:text="@string/logout"
             android:textColor="?attr/colorOnPrimary"
             app:strokeColor="?attr/colorOnPrimary" />
     </RelativeLayout>
@@ -75,13 +75,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Find Perfect Venue"
+                    android:text="@string/find_perfect_venue"
                     android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Let our smart tool suggest for you"
+                    android:text="@string/smart_tool_hint"
                     android:textAppearance="@style/TextAppearance.Material3.BodySmall" />
             </LinearLayout>
         </LinearLayout>
@@ -117,7 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="View My Bookings"
+                android:text="@string/view_my_bookings"
                 android:textAppearance="@style/TextAppearance.Material3.TitleMedium" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -139,7 +139,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:iconifiedByDefault="false"
-            app:queryHint="Search venues..." />
+            app:queryHint="@string/search_hint" />
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
@@ -149,7 +149,7 @@
         android:layout_below="@id/search_container"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
-        android:text="Available Venues"
+        android:text="@string/available_venues"
         android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
 
     <!-- List of Venues -->
