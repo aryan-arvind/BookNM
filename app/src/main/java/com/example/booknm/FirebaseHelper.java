@@ -20,6 +20,8 @@ public class FirebaseHelper {
      * This justifies the project as a modern, cloud-connected application.
      */
     public void syncBookingToCloud(Booking booking, String userName, String venueName) {
+        if (booking == null) return;
+        
         Map<String, Object> bookingData = new HashMap<>();
         bookingData.put("bookingId", booking.getId());
         bookingData.put("userName", userName);
@@ -42,6 +44,8 @@ public class FirebaseHelper {
      * Update booking status in cloud when admin approves/rejects
      */
     public void updateBookingStatusInCloud(int bookingId, String status) {
+        if (status == null) return;
+        
         db.collection("bookings")
                 .document(String.valueOf(bookingId))
                 .update("status", status)
