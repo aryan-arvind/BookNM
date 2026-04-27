@@ -39,10 +39,22 @@ public class RegisterActivity extends AppCompatActivity {
             String pass = etPassword.getText().toString();
             String conf = etConfirm.getText().toString();
 
-            if (TextUtils.isEmpty(name)) { etName.setError("Required"); return; }
-            if (!isValidEmail(email)) { etEmail.setError("Use institutional email"); return; }
-            if (!isValidPassword(pass)) { etPassword.setError("Password needs uppercase and number"); return; }
-            if (!pass.equals(conf)) { etConfirm.setError("Passwords must match"); return; }
+            if (TextUtils.isEmpty(name)) { 
+                etName.setError(getString(R.string.required_field)); 
+                return; 
+            }
+            if (!isValidEmail(email)) { 
+                etEmail.setError(getString(R.string.email_error)); 
+                return; 
+            }
+            if (!isValidPassword(pass)) { 
+                etPassword.setError(getString(R.string.password_error)); 
+                return; 
+            }
+            if (!pass.equals(conf)) { 
+                etConfirm.setError(getString(R.string.passwords_match_error)); 
+                return; 
+            }
 
             // Firebase Auth Integration
             mAuth.createUserWithEmailAndPassword(email, pass)

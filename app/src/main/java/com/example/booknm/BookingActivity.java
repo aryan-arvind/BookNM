@@ -108,7 +108,14 @@ public class BookingActivity extends AppCompatActivity {
         String endTime = times[1];
 
         if (TextUtils.isEmpty(date) || TextUtils.isEmpty(purpose)) {
-            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+            if (TextUtils.isEmpty(date)) etDate.setError(getString(R.string.required_field));
+            if (TextUtils.isEmpty(purpose)) etPurpose.setError(getString(R.string.required_field));
+            Toast.makeText(this, getString(R.string.required_field), Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        if (purpose.length() < 10) {
+            etPurpose.setError("Please provide a more detailed purpose (min 10 chars)");
             return;
         }
 
