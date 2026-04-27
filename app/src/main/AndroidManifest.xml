@@ -69,10 +69,14 @@
             android:name=".ViewBookingsActivity"
             android:exported="false" />
 
-        <!-- The new activity for Admins to see booking details -->
         <activity
             android:name=".AdminBookingDetailsActivity"
             android:exported="false" />
+            
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:label="About BookNM" />
 
     </application>
 

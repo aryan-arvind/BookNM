@@ -37,6 +37,17 @@
             android:text="@string/logout"
             android:textColor="?attr/colorOnPrimary"
             app:strokeColor="?attr/colorOnPrimary" />
+
+        <ImageButton
+            android:id="@+id/btnAbout"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btnLogoutHome"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_info_details"
+            app:tint="?attr/colorOnPrimary" />
     </RelativeLayout>
     
     <!-- Smart Suggestion Card -->

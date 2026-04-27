@@ -10,6 +10,7 @@ import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.card.MaterialCardView;
+import android.widget.ImageButton;
 
 import java.util.List;
 
@@ -19,6 +20,7 @@ public class UserHomeActivity extends AppCompatActivity {
     private Button btnLogout;
     private MaterialCardView cardMyBookings;
     private MaterialCardView cardSmartSuggestion;
+    private ImageButton btnAbout;
     private SearchView searchView;
     private VenueAdapter adapter;
     private ListView lvVenues;
@@ -34,6 +36,7 @@ public class UserHomeActivity extends AppCompatActivity {
         db = new DatabaseHelper(this);
         tvWelcome = findViewById(R.id.tvWelcome);
         btnLogout = findViewById(R.id.btnLogoutHome);
+        btnAbout = findViewById(R.id.btnAbout);
         cardMyBookings = findViewById(R.id.cardMyBookings);
         cardSmartSuggestion = findViewById(R.id.cardSmartSuggestion);
         searchView = findViewById(R.id.searchViewVenues);
@@ -62,6 +65,11 @@ public class UserHomeActivity extends AppCompatActivity {
             i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(i);
             finish();
+        });
+
+        btnAbout.setOnClickListener(v -> {
+            Intent i = new Intent(UserHomeActivity.this, AboutActivity.class);
+            startActivity(i);
         });
 
         // Updated listener for the card
