@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="12dp"
+    android:background="#FAFBFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvAddAdminTitle"
+        android:text="Add Admin"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminEmail"
+        android:hint="Admin Email (@nmims.in)"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/tvAddAdminTitle"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etAdminPassword"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/etAdminEmail"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnAddAdmin"
+        android:text="Create Admin"
+        android:layout_below="@id/etAdminPassword"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
