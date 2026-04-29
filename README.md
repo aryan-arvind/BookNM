@@ -1,5 +1,7 @@
 # BookNM - Campus Venue Booking System
 
+[![Android CI](https://github.com/aryan-arvind/BookNM/actions/workflows/android.yml/badge.svg)](https://github.com/aryan-arvind/BookNM/actions/workflows/android.yml)
+
 BookNM is a professional Android application designed for managing and booking campus venues such as labs, seminar rooms, and auditoriums. It features a robust **Offline-first architecture** with **Firebase Cloud Synchronization**, ensuring data integrity and accessibility.
 
 ## 🚀 Key Features
@@ -19,6 +21,7 @@ BookNM is a professional Android application designed for managing and booking c
 - **Database**: SQLite (Local) & Firebase Firestore (Cloud)
 - **Authentication**: Firebase Auth
 - **Build System**: Gradle (Kotlin DSL)
+- **CI/CD**: GitHub Actions & Dockerized Build Environment
 
 ## 🏗️ Architecture: Offline-First
 BookNM implements an **Offline-First** strategy. All data is first stored in a local SQLite database for maximum performance and offline availability. A dedicated `FirebaseHelper` then synchronizes this data with the cloud, allowing for multi-device consistency and data backup. This architecture is a key talking point for technical interviews as it demonstrates a deep understanding of data persistence and synchronization.
@@ -27,7 +30,7 @@ BookNM implements an **Offline-First** strategy. All data is first stored in a l
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/BookNM.git
+   git clone https://github.com/aryan-arvind/BookNM.git
    ```
 2. **Firebase Configuration**:
    - Create a project on the [Firebase Console](https://console.firebase.google.com/).
@@ -40,8 +43,8 @@ BookNM implements an **Offline-First** strategy. All data is first stored in a l
    - Run on an emulator or physical device.
 
 ## 👨‍💻 Author
-**Your Name**
-*College Project - Enhanced for MVP*
+**Aryan Arvind**
+*DevOps & Software Engineering Portfolio Project*
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
